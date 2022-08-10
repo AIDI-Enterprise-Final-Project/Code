@@ -5,7 +5,11 @@ import nltk
 from nltk.corpus import stopwords
 import re
 import string
-
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('omw-1.4')
+nltk.download('words')
 all_punctuations = string.punctuation + '‘’,:”][],'
 
 nltk_words = set(nltk.corpus.words.words())
