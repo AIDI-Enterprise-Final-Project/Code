@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>AIDI 2004 project</title>
+  
+</head>
+
+<body>
+  <center><div display: block; margin: 5px; style="background-color:gray"><h1><b>Fake News Detection</b></h1></div></center>
+  <div class= "form">
+    <p>AIDI 2004 Final Project Demo application. Application has been built using Flask.
+    In the field below enter your text and click on "submit" button to make prediction.
+    </p>
+	
+
+     
+    <form action="{{ url_for('predict')}}"method="POST">
+      <p>Enter your text below</p>
+    	<textarea name="message" rows="6" cols="50"></textarea>
+      <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+    </form>
+
+   <br>
+   <br>
+   {{ text }}
+   <br>
+   {{ prediction_res }}
+
+ </div>
+
+</body>
+</html>
